@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate your CGPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Site headder -->
+    <header>
+        <nav class="nav-list">
+            <div class="site-logo"><img src="images/giphy.gif" alt="simple gp/cgpa calculator" class="logo-img"></div>
+            <ul class="item">
+                <a href="index.html"><li class="list">home</li></a> 
+                <a href="about.html"><li class="list">about us</li></a> 
+                <a href="contact.html"><li class="list">contact us</li></a> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- End of site header -->
+
+    <div class="header-end"><p>You can check through the <a href="about.html">About us </a>page to know about how to use this app.</p></div>
+    <h1 id="heading-1">simple gpa / CGPA calculator </h1>
+
+    <!-- The app interface -->
+     <div class="section">
+       
+
+    <!-- form to fill -->
+
+    <form action="#" class="form-1">
+        <label for="units"> Enter your Course Units</label><br>
+        <input type="text" id="units" name="units" placeholder="e.g 1, 2, 3, 4" required><br><br>
+
+        <label for="grades"> Enter your Course Grade Points</label><br>
+        <input type="text" id="grades" name="grades" placeholder="e.g A = 5, B = 4, C = 3, D = 2"><br><br>
+
+        <submit type="submit" class="btn" class="display-result" id="display-result1">Calculate GPA</submit>
+    </form>
+
+    <div id="result1" class="hide-result">
+        <h1 class="result-head">Your GPA after calculation is: </h1> <button class="btn result-btn" onclick="calculateGP()">view result</button>
+        <div><img src="images/GPA.png" alt="GP image" class="gp-img"></div><br>
+        <input type="text" id="gp-result" name="result" class="result"><br>
+     </div>
+ 
+
+    <!-- second form to fill -->
+
+    <div>
+        <h1 id="heading-2">CGPA Instead?</h1>
+
+        <form action="#" class="form-1">
+            <h2 id="second-semester">Second Semster </h2>
+
+            <label for="units"> Enter your Course Units</label><br>
+            <input type="text" id="units2" name="units" placeholder="e.g 1, 2, 3, 4"><br><br>
+
+            <label for="grades"> Enter your Course Grade Points</label><br>
+            <input type="text" id="grades2" name="grades" placeholder="e.g A = 5, B = 4, C = 3, D = 2"><br><br>
+
+            <submit type="submit" class="btn" class="display-result" id="display-result2">Calculate CGPA</submit> 
+    </form>
+    </div>
+
+    <div id="result2" class="hide-result">
+        <h1 class="result-head">Your CGPA after calculation is: </h1><button class="btn result-btn" onclick="calculateCGPA()">view result</button>
+        <div><img src="images/CGPA.png" alt="GP image" class="gp-img"></div><br>
+        <input type="text" id="cgpa-result" name="result" class="result"><br>
+
+    </div>
+    </div>
+    <div>
+        <a href="/"><button class="btn">Restart</button></a> 
+    </div>
+    
+    <div>
+        <footer>
+            <p>© Gsam 2024 Simple CGPA Calculator. All rights reserved.</p>
+        </footer>
+
+    </div>
+    
+
+ <script src="script.js"></script>
+</body>
+</html>

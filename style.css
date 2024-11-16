@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #7095aa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #105072;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    color: white;
+}
+
+footer {
+    display: inline-block;
+}
+.section {
+    padding: 10px;
+    display: inline-block;
+    border-top: 2px solid white;
+    border-left: 2px solid white;;
+    border-right: 2px solid white;;
+}
+
+.nav-list {
+    height: 60px;
+    display: flex;
+    margin: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-logo {
+    width: 20%;
+}
+
+.logo-img {
+    width: 40%;
+}
+.item {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.list {
+    list-style-type: none;
+    color: white;
+
+}
+
+.list:hover {
+    border-bottom: 2px solid white;
+}
+
+.item a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.form-1 {
+    display: inline-block;
+    border: solid white 5px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 5px 5px 2px black;
+    padding: 12px 50px;
+    margin: 2px 50px;
+}
+
+.form-1 a {
+    text-decoration: none;
+
+}
+
+#heading-1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#heading-2 {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.header-end {
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+}
+input {
+    border: 3px solid black;
+    height: 25px;
+}
+label {
+     color: white;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+} 
+
+
+#second-semester {
+    color: white;
+}
+
+#heading-2 {
+    color: white;
+}
+
+.gp-img {
+    margin-top: 30px;
+    width: 80px;
+}
+
+.result-head {
+    display: inline;
+    margin-top: 30px;
+
+}
+
+.result {
+    display: inline;
+    text-align: center;
+    height: 30px;
+}
+button {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.header-rule {
+    border: 2px solid white;
+}
+
+.hide-result {
+    display: none;
+}
+
+.display-result {
+    display: block;
+
+}
+
+.about, .contact {
+    background-color: whitesmoke;
+}
+
+.about-list li {
+    list-style-type: none;
+
+}
+
+.about-head, .contact-head {
+    display: inline-block;
+    color: #105072;
+    margin-top: 10px;
+    border-bottom: 5px solid blue;
+}
+
+.contact-head {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.about-subhead, .contact-subhead{
+    padding: 10px 0px;
+    color: #105072;
+}
+
+.contact-subhead {
+    margin-top: 50px;
+}
+
+.about-footer {
+    margin-top: 5px;
+    display: block;
+}
+
+.about-head-2 {
+    padding: 5px 0px;
+    color: #105072;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social {
+    width: 5%;
+    padding: 20px;
+    text-align: center;
+
+}
+.contact-footer {
+    margin-top: 20px;
+}
+
+.gp-img2 {
+    width: 300px;
+    margin-top: 30px;
+}
+
+.about-table {
+    margin: 5px auto;
+    text-align:center;
+    border: 2px solid black;
+}
+th, tr, td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-list {
+        height: 40px;
+        display: flex;
+        margin: 0px 10px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .item {
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
+        font-weight: bolder;
+        text-transform: capitalize;
+    }
+
+    .site-logo {
+        width: 20%;
+    }
+
+    .contact-subhead {
+        display: none;
+    }
+
+    .social {
+        display: none;
+    }
+    .contact-footer {
+        display: none;
+    }
+
+    .about-head {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    #heading-1 {
+        font-size: 25px;
+
+    }
+
+    .result-head {
+        font-size: 20px;
+    }
+
+    .header-end {
+        font-size: 10px;
+    }
+
+
+}
+    
